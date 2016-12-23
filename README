@@ -6,4 +6,14 @@ method that was added.
 
 Solution
 ========
-If you want to know the solution you can checkout "solution" branch
+When you are asked to split up previous commit you can start by doing `git reset
+--mixed HEAD~1`. That way you will have uncommitted changes in your repository
+from this commit. You can then proceed with `git add` or if necessary `git add
+-p` followed by `git commit`
+
+Notes
+=====
+You should never use `git reset` (and some other commands) on changes which have
+already been merged in some remote repository. This would cause conflicts for
+people you collaborate with and can be confusing. Reworking changes while they
+are being reviewed is however necessary and a good thing. Don't be afraid of it!
