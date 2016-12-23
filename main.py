@@ -13,3 +13,8 @@ def my_second_method():
             
     Or not")
 
+def print_square():
+    num = int(raw_input("Input number: "))
+    print("Square: %d" % square(num))
+
+
